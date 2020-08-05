@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (jared)
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+target
+*.swp
+~$*

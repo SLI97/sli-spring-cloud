@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.6.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.sli</groupId>
+    <artifactId>sli-cloud</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>sli-cloud-eureka</module>
+    </modules>
+
+    <properties>
+        <sli.version>1.1.0.1-SNAPSHOT</sli.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <!--SpringCloud最新稳定版本-->
+        <spring-cloud.version>Finchley.SR2</spring-cloud.version>
+        <kaptcha.version>2.3.2</kaptcha.version>
+        <guava.version>26.0-jre</guava.version>
+        <spring-boot.mybatis>2.1.2</spring-boot.mybatis>
+        <druid.version>1.0.19</druid.version>
+        <pagehelper.boot.version>1.2.12</pagehelper.boot.version>
+        <swagger.core.version>1.5.24</swagger.core.version>
+        <swagger.fox.version>2.9.2</swagger.fox.version>
+        <sli-common.version>1.0.1-SNAPSHOT</sli-common.version>
+    </properties>
+
+    <!-- 依赖声明 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- SpringCloud 微服务 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

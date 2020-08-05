@@ -1,0 +1,3 @@
+spring:
+  profiles:
+    active: dev  #开一个dev开一个prod，修改dev和prod文件的default-zone就能形成集群
