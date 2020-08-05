@@ -17,31 +17,31 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>com.github.anji-plus</groupId>-->
+<!--            <artifactId>captcha-spring-boot-starter</artifactId>-->
+<!--        </dependency>-->
+
         <dependency>
-            <groupId>com.github.anji-plus</groupId>
-            <artifactId>captcha-spring-boot-starter</artifactId>
+            <groupId>com.sli</groupId>
+            <artifactId>sli-cloud-common-core</artifactId>
+            <version>${sli.version}</version>
+            <scope>compile</scope>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>com.sli</groupId>-->
-            <!--<artifactId>sli-cloud-common-core</artifactId>-->
-            <!--<version>${sli.version}</version>-->
-            <!--<scope>compile</scope>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.sli</groupId>
+            <artifactId>sli-cloud-redis</artifactId>
+            <version>${sli.version}</version>
+            <scope>compile</scope>
+        </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>com.sli</groupId>-->
-            <!--<artifactId>sli-cloud-redis</artifactId>-->
-            <!--<version>${sli.version}</version>-->
-            <!--<scope>compile</scope>-->
-        <!--</dependency>-->
-
-        <!--<dependency>-->
-            <!--<groupId>com.sli</groupId>-->
-            <!--<artifactId>sli-cloud-api</artifactId>-->
-            <!--<version>${sli.version}</version>-->
-            <!--<scope>compile</scope>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.sli</groupId>
+            <artifactId>sli-cloud-api</artifactId>
+            <version>${sli.version}</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
